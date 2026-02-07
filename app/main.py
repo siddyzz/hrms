@@ -10,6 +10,7 @@ app = FastAPI(title="HRMS Lite API")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+     "https://hrms-frontend-self.vercel.app"
 ]
 _cors_origin = os.getenv("CORS_ORIGIN")
 if _cors_origin:
